@@ -74,18 +74,24 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* 1. Login/Registration
+* 2. Homepage
+* 3. Create new Task
+* 4. Complete Task creation
+* 5. Update Task
+* 6. Complete updated Task creation
+* 7. Move task
+* 8. Complete Task movement
+* 9. Remove task
+* 10. Select Date
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Login/Registration —> Homepage
+   * Homepage <— —> Create Tasks
+   * (Optional) Homepage <— —> Edit Tasks
+   * (Optional) Homepage <— —> Remove Tasks
+   * (Optional) Homepage <— —> Move Tasks to another date
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
