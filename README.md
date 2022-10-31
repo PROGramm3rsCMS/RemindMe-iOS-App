@@ -63,12 +63,20 @@ media apps like Facebook, Instagram, and Twitter.
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login/Register Screen
+   * User can create a account if they are new, otherwise they are able to log in with a existing account to gain access to the home screen.
+* Home Screen
+   * User is able to select a date.
+   * User is able to view the list of their tasks.
+   * User is able to mark a task as completed.
+   * User is able to tap a button to create a task.
+   * User is able to remove/edit a task.
+* Move Task Screen
+   * User is able to move a task to a different date.
+* Adding Task Screen
+   * User is able to enter the task they want to create.
+* Updating Task Screen
+   * Allows user to edit a existing task.
 
 ### 3. Navigation
 
