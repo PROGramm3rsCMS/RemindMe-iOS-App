@@ -107,7 +107,10 @@ media apps like Facebook, Instagram, and Twitter.
 
 ### [BONUS] Digital Wireframes & Mockups
 
+
+
 ### [BONUS] Interactive Prototype
+<img src='http://g.recordit.co/KT7iIjCxFG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
 [This section will be completed in Unit 9]
