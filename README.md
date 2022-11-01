@@ -85,13 +85,9 @@ media apps like Facebook, Instagram, and Twitter.
 * 1. Login/Registration
 * 2. Homepage
 * 3. Create new Task
-* 4. Complete Task creation
-* 5. Update Task
-* 6. Complete updated Task creation
-* 7. Move task
-* 8. Complete Task movement
-* 9. Remove task
-* 10. Select Date
+* 4. Update Task
+* 5. Move task
+* 6. Remove task
 
 **Flow Navigation** (Screen to Screen)
 
@@ -102,11 +98,25 @@ media apps like Facebook, Instagram, and Twitter.
    * (Optional) Homepage <— —> Move Tasks to another date
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+Paper Wireframe 
+
+![1b15f4d3-5b4c-46a9-aef1-ca5e47c175dc](https://user-images.githubusercontent.com/111750721/199243785-30ea5199-a036-4e3b-9482-560aa2f9a402.JPG)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
+Digital Wireframe
+
+![Component 1](https://user-images.githubusercontent.com/111750721/199242565-0f770225-44ad-402d-b05a-3a461aa94c10.png)
+
+![Component 2](https://user-images.githubusercontent.com/111750721/199242581-94b82711-4c9a-4f76-bdbb-6c31280b4ea3.png)
+
+Mockups
+
+![Mockups 1](https://user-images.githubusercontent.com/111750721/199241082-59b8caaa-bde9-4743-8fe1-462b2266bf4e.png)
+
+![Mockups 2](https://user-images.githubusercontent.com/111750721/199241104-2b36574a-b247-4d93-bff5-6172692d768f.png)
 
 
 ### [BONUS] Interactive Prototype
