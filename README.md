@@ -126,13 +126,10 @@ Mockups
 
 User
 
-##| **Property** | **Type** | **Description** |
-| :--: | :--: | :--: |
-| objectId | String | unique id for the user post (default field) |
-| username | String | username used to create or log in to app |
-| password | String | password allows the correct user to log in to app |
-| createdAt | DateTime | date when user's name and password created (default field) |
-| updatedAt | DateTime | date when user's name and password last created (default field) |
+| First Header | Second Header |
+| ------------ | ------------- |
+| Content Cell | Content Cell  |
+| Content Cell | Content Cell  |
 
 
 ### Models
