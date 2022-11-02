@@ -124,6 +124,8 @@ Mockups
 
 ## Schema 
 
+### Models
+
 User
 
 | **Property** | **Type** | **Description** |
@@ -138,15 +140,12 @@ Task
 
 | **Property** | **Type** | **Description** |
 | ------------ | ----------- | ----------- |
-| objectId     | String      | unique id for the user task (default field) |
+| objectId     | String      | unique id for the user task (default field)                     |
 | task         | String      | task that the user creates |
 | author       | Pointer to User | task author |
 | createdAt    | DateTime    | date when user creates task (default field) |
 | updatedAt    | DateTime    | date when task is last updated (default field) |
 
-
-### Models
-[Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
