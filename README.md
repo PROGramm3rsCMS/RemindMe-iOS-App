@@ -82,12 +82,12 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Tab Navigation** (Tab to Screen)
 
-* 1. Login/Registration
-* 2. Homepage
-* 3. Create new Task
-* 4. Update Task
-* 5. Move task
-* 6. Remove task
+* Login/Registration
+* Homepage
+* Create new Task
+* Update Task
+* Move task
+* Remove task
 
 **Flow Navigation** (Screen to Screen)
 
@@ -123,7 +123,18 @@ Mockups
 <img src='http://g.recordit.co/KT7iIjCxFG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+User
+
+##| **Property** | **Type** | **Description** |
+| :--: | :--: | :--: |
+|objectId |String |unique id for the user post (default field) |
+|username |String |username used to create or log in to app |
+|password |String |password allows the correct user to log in to app |
+|createdAt |DateTime | date when user's name and password created (default field) |
+|updatedAt |DateTime | date when user's name and password last created (default field) |
+
+
 ### Models
 [Add table of models]
 ### Networking
