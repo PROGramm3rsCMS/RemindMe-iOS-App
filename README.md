@@ -82,12 +82,12 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Tab Navigation** (Tab to Screen)
 
-* 1. Login/Registration
-* 2. Homepage
-* 3. Create new Task
-* 4. Update Task
-* 5. Move task
-* 6. Remove task
+* Login/Registration
+* Homepage
+* Create new Task
+* Update Task
+* Move task
+* Remove task
 
 **Flow Navigation** (Screen to Screen)
 
@@ -123,9 +123,29 @@ Mockups
 <img src='http://g.recordit.co/KT7iIjCxFG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+User
+
+| **Property** | **Type** | **Description** |
+| ------------ | ------------- | ----------- |
+| objectId     | String        | unique id for the user (default field) |
+| username     | String        | username used to create or login to app     |
+| password     | String        | password allows the correct user to login to app |
+| createdAt    | DateTime      | date when a user name and password is created (default field) |
+| updatedAt    | DateTime      | date when a user name and password is last updated (default field) |
+
+Task
+
+| **Property** | **Type** | **Description** |
+| ------------ | ----------- | ----------- |
+| objectId     | String      | unique id for the user task (default field)                     |
+| task         | String      | task that the user creates |
+| author       | Pointer to User | task author |
+| createdAt    | DateTime    | date when user creates task (default field) |
+| updatedAt    | DateTime    | date when task is last updated (default field) |
+
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
