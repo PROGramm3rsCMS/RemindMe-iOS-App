@@ -126,10 +126,10 @@ Mockups
 
 User
 
-| First Header | Second Header |
-| ------------ | ------------- |
-| Content Cell | Content Cell  |
-| Content Cell | Content Cell  |
+| Property | Type | Description |
+| ------------ | ------------- | ---------------------------------------------------|
+| Content Cell | Content Cell  | Content Cell                                       |
+| Content Cell | Content Cell  | Content Cell                                       |
 
 
 ### Models
