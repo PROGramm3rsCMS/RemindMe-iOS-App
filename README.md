@@ -126,9 +126,9 @@ Mockups
 
 User
 
-| Property | Type | Description |
-| ------------ | ------------- | ---------------------------------------------------|
-| Content Cell | Content Cell  | Content Cell                                       |
+| **Property** | **Type** | **Description** |
+| ------------ | ------------- | -----------|
+| objectId     | String        | unique id for the user post (default field) |
 | Content Cell | Content Cell  | Content Cell                                       |
 
 
