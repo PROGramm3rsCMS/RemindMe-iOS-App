@@ -127,9 +127,22 @@ Mockups
 User
 
 | **Property** | **Type** | **Description** |
-| ------------ | ------------- | -----------|
-| objectId     | String        | unique id for the user post (default field) |
-| Content Cell | Content Cell  | Content Cell                                       |
+| ------------ | ------------- | ----------- |
+| objectId     | String        | unique id for the user (default field) |
+| username     | String        | username used to create or login to app     |
+| password     | String        | password allows the correct user to login to app |
+| createdAt    | DateTime      | date when a user name and password is created (default field) |
+| updatedAt    | DateTime      | date when a user name and password is last updated (default field) |
+
+Task
+
+| **Property** | **Type** | **Description** |
+| ------------ | ----------- | ----------- |
+| objectId     | String      | unique id for the user task (default field) |
+| task         | String      | task that the user creates |
+| author       | Pointer to User | task author |
+| createdAt    | DateTime    | date when user creates task (default field) |
+| updatedAt    | DateTime    | date when task is last updated (default field) |
 
 
 ### Models
