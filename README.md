@@ -126,28 +126,6 @@ Mockups
 
 ### Models
 
-### Networking
-List of network requests by screen
-
-* Profile Screen
-
-  * (Read/GET) Query logged in user object
-
-* Home Feed Screen
-
-  * (Read/GET) Query all tasks where user is author
-  * (Update/PUT) Update when a task is complete
-  * (Delete) Delete existing Task
-
-* Create Task Screen
-  * (Create/POST) Creating a new task
-
-* Move Existing Task Screen
-  * (Update/PUT) Updating existing Task to another date
-
-* Update Existing Task Screen 
-  * (Update/PUT) Update existing Task
-
 User
 
 | **Property** | **Type** | **Description** |
@@ -169,7 +147,35 @@ Task
 | updatedAt    | DateTime    | date when task is last updated (default field) |
 
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+List of network requests by screen
+
+* Profile Screen
+  * (Read/GET) Query logged in user object
+
+* Home Feed Screen
+  * (Update/PUT) Update when a task is complete
+  * (Delete) Delete existing Task
+  * (Read/GET) Query all tasks where user is author
+```
+let query = PFQuery(className:"Post")
+query.whereKey("author", equalTo: currentUser)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+  // TODO: Do something with posts...
+   }
+}
+```
+
+* Create Task Screen
+  * (Create/POST) Creating a new task
+
+* Move Existing Task Screen
+  * (Update/PUT) Updating existing Task to another date
+
+* Update Existing Task Screen 
+  * (Update/PUT) Update existing Task
 
