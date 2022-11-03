@@ -126,6 +126,28 @@ Mockups
 
 ### Models
 
+### Networking
+List of network requests by screen
+
+* Profile Screen
+
+  * (Read/GET) Query logged in user object
+
+* Home Feed Screen
+
+  * (Read/GET) Query all tasks where user is author
+  * (Update/PUT) Update when a task is complete
+  * (Delete) Delete existing Task
+
+* Create Task Screen
+  * (Create/POST) Creating a new task
+
+* Move Existing Task Screen
+  * (Update/PUT) Updating existing Task to another date
+
+* Update Existing Task Screen 
+  * (Update/PUT) Update existing Task
+
 User
 
 | **Property** | **Type** | **Description** |
