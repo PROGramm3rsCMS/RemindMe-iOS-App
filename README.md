@@ -151,11 +151,26 @@ List of network requests by screen
 
 * Profile Screen
   * (Read/GET) Query logged in user object
+  ```@IBAction func onSignIn(_ sender: Any) {
+        
+        let username = usernameField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: username, password: password)
+        { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            } else {
+                print("Error: \(error?.localizedDescription)")
+            }
+        }
+    } ```
 
 * Home Feed Screen
   * (Update/PUT) Update when a task is complete
   * (Delete) Delete existing Task
   * (Read/GET) Query all tasks where user is author
+  
 ```
 let query = PFQuery(className:"Post")
 query.whereKey("author", equalTo: currentUser)
@@ -172,10 +187,45 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
 
 * Create Task Screen
   * (Create/POST) Creating a new task
+  
+``` 
+class ToDoItem: NSObject {
+  var id: String
+  var image: String
+  var title: String
+  var date: Date
+  
+  init(id: String, image: String, title: String, date: Date) {
+    self.id = id
+    self.image = image
+    self.title = title
+    self.date = date
+  }
+}
+```
+
 
 * Move Existing Task Screen
   * (Update/PUT) Updating existing Task to another date
-
+  
+```  
+  struct ContentView: View {
+      @State private var wakeUp = Date.now
+      
+      var body: some View {
+          DatePicker("Please enter a date", selection: $wakeUp)
+      }
+  }
+  
+  struct ContentView_Previews: PreviewProvider {
+     static var previews: some View {
+          ContentView()
+     }
+  }
+```
 * Update Existing Task Screen 
   * (Update/PUT) Update existing Task
-
+```
+let aString = "This is my string"
+let newString = aString.replacingOccurrences(of: " ", with: "+")
+```
