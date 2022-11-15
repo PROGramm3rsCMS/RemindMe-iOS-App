@@ -234,3 +234,5 @@ let newString = aString.replacingOccurrences(of: " ", with: "+")
 Here's a walkthrough of implemented user stories Sprint 1:
 
 <img src='http://g.recordit.co/cyHH59ln8Q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='http://g.recordit.co/0Uthyfwvk0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
