@@ -49,7 +49,8 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Required Must-have Stories**
 
--[] Users
+- [ ] User can pull to refresh. (1pt)
+- [ ] User can load past posts infinitely. (2pts)
 * Users can create or log in to an account to access the current task.
 * Users can create a task for their daily schedule.
 * Users can mark the completion of a task.
