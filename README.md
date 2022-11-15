@@ -49,11 +49,11 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Required Must-have Stories**
 
-* Users can create or log in to an account to access the current task.
-* Users can create a task for their daily schedule.
-* Users can mark the completion of a task.
-* Users can remove or edit a task altogether.
-* Users can add uncompleted tasks to the next day on the calendar.
+- [ ] Users can create or log in to an account to acceess the current task.
+- [ ] Users can create a task for their daily schedule.
+- [ ] Users can mark the completion of a task.
+- [ ] Users can remove or edit a task.
+- [ ] Users can add uncompleted tasks to the next day on the calendar.
 
 **Optional Nice-to-have Stories**
 
@@ -229,3 +229,8 @@ class ToDoItem: NSObject {
 let aString = "This is my string"
 let newString = aString.replacingOccurrences(of: " ", with: "+")
 ```
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories Sprint 1:
+
+<img src='http://g.recordit.co/cyHH59ln8Q.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
