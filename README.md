@@ -48,6 +48,7 @@ media apps like Facebook, Instagram, and Twitter.
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
+
 -[] Users
 * Users can create or log in to an account to access the current task.
 * Users can create a task for their daily schedule.
