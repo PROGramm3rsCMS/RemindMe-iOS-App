@@ -49,7 +49,7 @@ media apps like Facebook, Instagram, and Twitter.
 
 **Required Must-have Stories**
 
-- [ ] Users can create or log in to an account to acceess the current task.
+- [x] Users can create or log in to an account to acceess the current task.
 - [ ] Users can create a task for their daily schedule.
 - [ ] Users can mark the completion of a task.
 - [ ] Users can remove or edit a task.
