@@ -130,35 +130,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-mn-Iry">
-                                <rect key="frame" x="150.66666666666669" y="99" width="128.66666666666669" height="28.666666666666671"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-mn-Iry">
+                                <rect key="frame" x="151" y="199.00000000000011" width="128.66666666666669" height="28.666666666666671"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-l0-7OE">
-                                <rect key="frame" x="165" y="213.66666666666666" width="101" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRk-l0-7OE">
+                                <rect key="frame" x="165" y="328" width="100" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.5647059083" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Confirm"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-X0-bVV">
-                                <rect key="frame" x="96" y="154" width="238" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-X0-bVV">
+                                <rect key="frame" x="61" y="253" width="308" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uI9-Jf-acA">
+                                <rect key="frame" x="179" y="83" width="73" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Task" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LPp-YB-nXO">
+                                <rect key="frame" x="61" y="132" width="308" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TRD-tP-RVE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="wRk-l0-7OE" firstAttribute="leading" secondItem="TRD-tP-RVE" secondAttribute="leading" constant="165" id="Gl6-sv-o3y"/>
-                            <constraint firstItem="TRD-tP-RVE" firstAttribute="bottom" secondItem="wRk-l0-7OE" secondAttribute="bottom" constant="649.33333333333337" id="KrQ-GT-GhX"/>
-                            <constraint firstItem="wRk-l0-7OE" firstAttribute="centerX" secondItem="K0H-X0-bVV" secondAttribute="centerX" id="TB3-jQ-jXN"/>
-                            <constraint firstItem="wRk-l0-7OE" firstAttribute="top" secondItem="K0H-X0-bVV" secondAttribute="bottom" constant="22.666666666666657" id="bmZ-tS-4Yv"/>
-                            <constraint firstItem="1Bf-mn-Iry" firstAttribute="top" secondItem="TRD-tP-RVE" secondAttribute="top" constant="40" id="p9p-pt-lcF"/>
-                            <constraint firstItem="1Bf-mn-Iry" firstAttribute="centerX" secondItem="64t-VH-uk7" secondAttribute="centerX" id="whi-Dx-drT"/>
-                            <constraint firstItem="wRk-l0-7OE" firstAttribute="centerX" secondItem="64t-VH-uk7" secondAttribute="centerX" constant="0.5" id="xer-mN-fXl"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="confirmButton" destination="wRk-l0-7OE" id="L6P-hk-0QH"/>
