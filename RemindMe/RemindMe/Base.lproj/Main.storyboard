@@ -111,7 +111,7 @@
             <objects>
                 <viewController id="jAy-Dt-OiP" customClass="AgendaViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZEe-Gc-RXC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="BN6-vN-B4G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,6 +143,9 @@
                                 <color key="tintColor" red="0.5647059083" green="0.61960786580000005" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Confirm"/>
+                                <connections>
+                                    <segue destination="jAy-Dt-OiP" kind="presentation" id="FZa-xC-0Vc"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-X0-bVV">
                                 <rect key="frame" x="61" y="253" width="308" height="34"/>
@@ -170,6 +173,7 @@
                     <connections>
                         <outlet property="confirmButton" destination="wRk-l0-7OE" id="L6P-hk-0QH"/>
                         <outlet property="dateTF" destination="K0H-X0-bVV" id="f8Q-eS-sLT"/>
+                        <outlet property="taskTF" destination="LPp-YB-nXO" id="ijC-hH-U6e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ca-h9-1Yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -195,6 +199,9 @@
             <point key="canvasLocation" x="884.61538461538464" y="-28.436018957345969"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FZa-xC-0Vc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
