@@ -10,6 +10,7 @@
 		3A182E7C3472DD51EB441D6B /* Pods_RemindMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3278961C3D43C9990727496 /* Pods_RemindMe.framework */; };
 		73C562ECF19DD744B97C200A /* Pods_RemindMe_RemindMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB466A0284518514BB362942 /* Pods_RemindMe_RemindMeUITests.framework */; };
 		7B8EE81A388B1EB8CAFD00BB /* Pods_RemindMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930BDE9308005C4ED2C42D26 /* Pods_RemindMeTests.framework */; };
+		A316EACB292C9D3100AB5E11 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316EACA292C9D3100AB5E11 /* CalenderViewController.swift */; };
 		D578CAD0291B0B8600EEA23E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578CACF291B0B8600EEA23E /* LoginViewController.swift */; };
 		D578CAD2291B0DFB00EEA23E /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D578CAD1291B0DFA00EEA23E /* AgendaViewController.swift */; };
 		D5A989F1290B392600FC6BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A989F0290B392600FC6BB6 /* AppDelegate.swift */; };
@@ -47,6 +48,7 @@
 		930BDE9308005C4ED2C42D26 /* Pods_RemindMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A257E890CA9D6CBBF239018 /* Pods-RemindMe-RemindMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMe-RemindMeUITests.release.xcconfig"; path = "Target Support Files/Pods-RemindMe-RemindMeUITests/Pods-RemindMe-RemindMeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A09C22F1CB6709CC281EF2B1 /* Pods-RemindMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMeTests.release.xcconfig"; path = "Target Support Files/Pods-RemindMeTests/Pods-RemindMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A316EACA292C9D3100AB5E11 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		B64668012D3D9B48DB17C5E1 /* Pods-RemindMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemindMe.release.xcconfig"; path = "Target Support Files/Pods-RemindMe/Pods-RemindMe.release.xcconfig"; sourceTree = "<group>"; };
 		C3278961C3D43C9990727496 /* Pods_RemindMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemindMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D578CACF291B0B8600EEA23E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				D5A989FB290B392900FC6BB6 /* LaunchScreen.storyboard */,
 				D5A989FE290B392900FC6BB6 /* Info.plist */,
 				D578CACF291B0B8600EEA23E /* LoginViewController.swift */,
+				A316EACA292C9D3100AB5E11 /* CalenderViewController.swift */,
 			);
 			path = RemindMe;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A316EACB292C9D3100AB5E11 /* CalenderViewController.swift in Sources */,
 				D578CAD2291B0DFB00EEA23E /* AgendaViewController.swift in Sources */,
 				D578CAD0291B0B8600EEA23E /* LoginViewController.swift in Sources */,
 				D5A989F1290B392600FC6BB6 /* AppDelegate.swift in Sources */,
@@ -606,7 +610,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -636,7 +640,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
