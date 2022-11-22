@@ -8,7 +8,9 @@
 import UIKit
 
 class CalenderViewController: UIViewController {
+
     @IBOutlet weak var dateTF: UITextField!
+    @IBOutlet weak var confirmButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

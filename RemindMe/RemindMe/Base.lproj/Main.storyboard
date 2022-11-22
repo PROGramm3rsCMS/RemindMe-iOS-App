@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OxT-KT-2I5">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -123,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="1728" y="-28"/>
         </scene>
-        <!--Calender View Controller-->
+        <!--Calender-->
         <scene sceneID="pvW-f5-zEW">
             <objects>
-                <viewController id="OxT-KT-2I5" customClass="CalenderViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Calender" id="OxT-KT-2I5" customClass="CalenderViewController" customModule="RemindMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="64t-VH-uk7">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,8 +142,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Confirm"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zyY-4b-e4z">
-                                <rect key="frame" x="65" y="156" width="300" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0H-X0-bVV">
+                                <rect key="frame" x="96" y="154" width="238" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -152,19 +151,18 @@
                         <viewLayoutGuide key="safeArea" id="TRD-tP-RVE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zyY-4b-e4z" firstAttribute="top" secondItem="1Bf-mn-Iry" secondAttribute="bottom" constant="28.329999999999998" id="FUD-cW-VDY"/>
                             <constraint firstItem="wRk-l0-7OE" firstAttribute="leading" secondItem="TRD-tP-RVE" secondAttribute="leading" constant="165" id="Gl6-sv-o3y"/>
-                            <constraint firstItem="wRk-l0-7OE" firstAttribute="top" secondItem="zyY-4b-e4z" secondAttribute="bottom" constant="23.670000000000002" id="Gr4-IU-dFn"/>
-                            <constraint firstItem="zyY-4b-e4z" firstAttribute="centerX" secondItem="64t-VH-uk7" secondAttribute="centerX" id="RGl-bC-8XM"/>
-                            <constraint firstItem="zyY-4b-e4z" firstAttribute="leading" secondItem="TRD-tP-RVE" secondAttribute="leading" constant="65" id="lsF-qk-sLq"/>
+                            <constraint firstItem="TRD-tP-RVE" firstAttribute="bottom" secondItem="wRk-l0-7OE" secondAttribute="bottom" constant="649.33333333333337" id="KrQ-GT-GhX"/>
+                            <constraint firstItem="wRk-l0-7OE" firstAttribute="centerX" secondItem="K0H-X0-bVV" secondAttribute="centerX" id="TB3-jQ-jXN"/>
+                            <constraint firstItem="wRk-l0-7OE" firstAttribute="top" secondItem="K0H-X0-bVV" secondAttribute="bottom" constant="22.666666666666657" id="bmZ-tS-4Yv"/>
                             <constraint firstItem="1Bf-mn-Iry" firstAttribute="top" secondItem="TRD-tP-RVE" secondAttribute="top" constant="40" id="p9p-pt-lcF"/>
-                            <constraint firstItem="TRD-tP-RVE" firstAttribute="trailing" secondItem="zyY-4b-e4z" secondAttribute="trailing" constant="65" id="rfI-Wx-3pN"/>
                             <constraint firstItem="1Bf-mn-Iry" firstAttribute="centerX" secondItem="64t-VH-uk7" secondAttribute="centerX" id="whi-Dx-drT"/>
                             <constraint firstItem="wRk-l0-7OE" firstAttribute="centerX" secondItem="64t-VH-uk7" secondAttribute="centerX" constant="0.5" id="xer-mN-fXl"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="dateTF" destination="zyY-4b-e4z" id="yJv-Pk-3zD"/>
+                        <outlet property="confirmButton" destination="wRk-l0-7OE" id="L6P-hk-0QH"/>
+                        <outlet property="dateTF" destination="K0H-X0-bVV" id="f8Q-eS-sLT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ca-h9-1Yb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
