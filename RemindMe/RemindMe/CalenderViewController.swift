@@ -11,6 +11,7 @@ class CalenderViewController: UIViewController {
 
     @IBOutlet weak var dateTF: UITextField!
     @IBOutlet weak var confirmButton: UIButton!
+    @IBOutlet weak var taskTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
