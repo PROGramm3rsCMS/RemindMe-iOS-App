@@ -2,18 +2,17 @@
 //  CalenderViewController.swift
 //  RemindMe
 //
-//  Created by Chaquira Moreno on 11/21/22.
+//  Created by Chaquira Moreno on 11/22/22.
 //
 
 import UIKit
 
 class CalenderViewController: UIViewController {
-
     @IBOutlet weak var dateTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(dateChange(datePicker:)), for: UIControl.Event.valueChanged)
