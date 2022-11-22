@@ -16,12 +16,16 @@ class CalenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(dateChange(datePicker:)), for: UIControl.Event.valueChanged)
         datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.preferredDatePickerStyle = .wheels
-        datePicker.maximumDate = Date()
+        datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -1, to: Date())
+        datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 1, to: Date())
+
+
         
         dateTF.inputView = datePicker
         dateTF.text = formatDate(date: Date())
