@@ -9,6 +9,7 @@ target 'RemindMe' do
     
      pod 'Parse'
      pod 'AlamofireImage'
+     pod 'MessageInputBar'
 
   target 'RemindMeTests' do
     inherit! :search_paths

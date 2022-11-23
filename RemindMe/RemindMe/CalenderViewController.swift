@@ -6,17 +6,17 @@
 //
 
 import UIKit
+import Parse
 
-class CalenderViewController: UIViewController {
-
+class CalenderViewController: UIViewController, UINavigationControllerDelegate {
+    
     @IBOutlet weak var dateTF: UITextField!
-    @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var taskTF: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(dateChange(datePicker:)), for: UIControl.Event.valueChanged)
@@ -24,12 +24,35 @@ class CalenderViewController: UIViewController {
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -1, to: Date())
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: 1, to: Date())
-
-
+        
+        
         
         dateTF.inputView = datePicker
         dateTF.text = formatDate(date: Date())
     }
+    
+    @IBAction func confirmButton(_ sender: Any) {
+        //an object for agenda
+        let task = PFObject(className: "Tasks")
+        
+        //schema for agenda
+        task["username"] = PFUser.current()
+        task["todo"] = taskTF.text!
+        task["currentDate"] = dateTF.text!
+        task["creator"] = PFUser.current()
+        
+        task.saveInBackground{(success, error) in
+            if (success) {
+                self.dismiss(animated: true, completion: nil)
+                print("Task saved!")
+            }
+            else {
+                print("You have an error!")
+            }
+            
+        }
+    }
+    
     
     @objc func dateChange(datePicker: UIDatePicker)
     {
@@ -42,5 +65,6 @@ class CalenderViewController: UIViewController {
         formatter.dateFormat = "MMMM dd yyyy"
         return formatter.string(from: date)
     }
+    
     
 }
