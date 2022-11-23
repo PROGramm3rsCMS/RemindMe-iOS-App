@@ -50,7 +50,7 @@ media apps like Facebook, Instagram, and Twitter.
 **Required Must-have Stories**
 
 - [x] Users can create or log in to an account to access the current task.
-- [ ] Users can create a task for their daily schedule.
+- [x] Users can create a task for their daily schedule.
 - [ ] Users can mark the completion of a task.
 - [ ] Users can remove or edit a task altogether.
 - [ ] Users can add uncompleted tasks to the next day on the calendar.
@@ -230,6 +230,10 @@ let aString = "This is my string"
 let newString = aString.replacingOccurrences(of: " ", with: "+")
 ```
 ## Video Walkthrough
+
+Here's a walkthrough of implemented user stores Sprint 2:
+
+<img src='http://g.recordit.co/ctoksNq5T8.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Here's a walkthrough of implemented user stories Sprint 1:
 
