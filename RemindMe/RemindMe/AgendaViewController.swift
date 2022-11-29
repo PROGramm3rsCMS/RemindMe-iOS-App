@@ -68,6 +68,17 @@ class AgendaViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            tasks.remove(at: indexPath.row)
+        }
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
+    
     func messageInputBar(_ inputBar: MessageInputBar, didPressSendButtonWith text: String) {
         let agenda = PFObject(className: "Agendas")
         agenda["username"] = PFUser.current()!
