@@ -51,7 +51,7 @@ media apps like Facebook, Instagram, and Twitter.
 
 - [x] Users can create or log in to an account to access the current task.
 - [x] Users can create a task for their daily schedule.
-- [ ] Users can mark the completion of a task.
+- [x] Users can mark the completion of a task.
 - [ ] Users can remove or edit a task altogether.
 - [ ] Users can add uncompleted tasks to the next day on the calendar.
 
