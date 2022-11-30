@@ -231,7 +231,11 @@ let newString = aString.replacingOccurrences(of: " ", with: "+")
 ```
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stores Sprint 2:
+Here's a walkthrough of implemented user stories Sprint 3:
+
+<img src='http://g.recordit.co/mrexCqq0B7.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Here's a walkthrough of implemented user stories Sprint 2:
 
 <img src='http://g.recordit.co/ctoksNq5T8.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
